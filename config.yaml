@@ -1,0 +1,11 @@
+_BASE_: "/data/rali5/Tmp/yockelle/TableBank/TableBank/output/Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/FAIR/X-101-32x8d.pkl"
+  MASK_ON: False
+  RESNETS:
+    STRIDE_IN_1X1: False
+    DEPTH: 50
+  ROI_HEADS:
+    NUM_CLASSES: 1
+DATALOADER:
+  NUM_WORKERS: 2
