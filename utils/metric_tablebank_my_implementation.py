@@ -1,5 +1,5 @@
 from shapely.geometry import Polygon
-from get_iou import get_max_iou, get_iou, get_overlap
+from utils.get_iou import get_max_iou, get_iou, get_overlap
 import numpy as np
 
 def metric_table_bank_union(ground_truths, predictions):
