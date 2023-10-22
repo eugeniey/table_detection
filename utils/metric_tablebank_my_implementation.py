@@ -2,7 +2,11 @@ from shapely.geometry import Polygon
 from utils.get_iou import get_max_iou, get_iou, get_overlap
 import numpy as np
 
+
 def metric_table_bank_union(ground_truths, predictions):
+    """
+    Measure the metric used by TableBank authors between ground truth and predictions
+    """
 
     sum_denominator_precision = 0
     sum_denominator_recall = 0

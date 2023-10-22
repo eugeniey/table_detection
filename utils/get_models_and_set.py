@@ -58,12 +58,6 @@ def get_1k_test_set(type_data):
     elif type_data == "latex":
         f = open(path_data + "test_data_latex_1k.json",)
         data = json.load(f)
-    #elif type_data == "word-latex":
-    #    w = open(path_data + "test_data_word_1k.json",)
-    #    l = open(path_data + "test_data_latex_1k.json",)
-    #    data_word = json.load(w)
-     #   data_latex = json.load(l)
-     #   data = data_word + data_latex
     elif type_data == "publaynet":
         f = open(path_data + "test_data_publaynet_1k.json",)
         data = json.load(f)
